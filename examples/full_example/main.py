@@ -8,7 +8,7 @@ from kivy.lang import Builder  # noqa
 from kivy.properties import StringProperty  # noqa
 from kivymd.app import MDApp  # noqa
 from kivymd.uix.list import OneLineAvatarListItem  # noqa
-from kivymd.uix.toolbar import MDToolbar  # noqa
+from kivymd.uix.toolbar import MDTopToolBar  # noqa
 
 from kivymd_extensions.akivymd.uix.statusbarcolor import (  # noqa
     change_statusbar_color,
@@ -22,7 +22,7 @@ kv = """
     IconLeftWidget:
         icon: root.icon
 
-<MyToolbar@MDToolbar>:
+<MyToolbar@MDTopToolBar>:
     elevation: 10
     left_action_items: [["arrow-left", lambda x: app.show_screen("Home", "back")]]
 
